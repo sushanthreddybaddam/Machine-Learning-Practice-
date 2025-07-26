@@ -33,3 +33,28 @@ for i in range( len(price)):
 print(count)
 
 
+
+a = np.array([1, 2, 3])       # from list
+z = np.zeros((2, 3))          # 2x3 array of zeros
+o = np.ones((2, 2))           # 2x2 array of ones
+e = np.empty((2, 2))          # uninitialized values
+r = np.arange(1, 10, 2)       # [1 3 5 7 9]
+l = np.linspace(0, 1, 5)      # 5 values from 0 to 1
+
+a = np.array([[1, 2], [3, 4], [5, 6]])
+print(a.shape)               # (3, 2)
+b = a.reshape((2, 3))        # reshape to 2x3
+
+a = np.array([10, 20, 30, 40, 50])
+print(a[1])                  # 20
+print(a[1:4])                # [20 30 40]
+
+
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+print(a + b)                 # [5 7 9]
+print(a * b)                 # [4 10 18]
+print(a ** 2)                # [1 4 9]
+print(np.sqrt(a))            # [1. 1.41 1.73]
+
+
